@@ -27,14 +27,6 @@ namespace Launcher
             this.WindowState = FormWindowState.Minimized;
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void BtnMinimizaCAD_Click(object sender, EventArgs e)
-        {
-            this.WindowState = FormWindowState.Minimized;
-        }
+       
     }
 }

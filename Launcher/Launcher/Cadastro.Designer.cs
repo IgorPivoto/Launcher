@@ -39,14 +39,12 @@
             textBox2 = new TextBox();
             textBox3 = new TextBox();
             textBox4 = new TextBox();
-            BtnMinimizaCAD = new Button();
-            BtnSair2 = new Button();
             BtnCriarConta = new Button();
             SuspendLayout();
             // 
             // BtnMinimiza
             // 
-            BtnMinimiza.Location = new Point(718, 12);
+            BtnMinimiza.Location = new Point(368, 12);
             BtnMinimiza.Name = "BtnMinimiza";
             BtnMinimiza.Size = new Size(32, 32);
             BtnMinimiza.TabIndex = 4;
@@ -55,7 +53,7 @@
             // 
             // BtnSair
             // 
-            BtnSair.Location = new Point(756, 12);
+            BtnSair.Location = new Point(406, 12);
             BtnSair.Name = "BtnSair";
             BtnSair.Size = new Size(32, 32);
             BtnSair.TabIndex = 3;
@@ -135,24 +133,6 @@
             textBox4.Size = new Size(320, 27);
             textBox4.TabIndex = 13;
             // 
-            // BtnMinimizaCAD
-            // 
-            BtnMinimizaCAD.Location = new Point(368, 12);
-            BtnMinimizaCAD.Name = "BtnMinimizaCAD";
-            BtnMinimizaCAD.Size = new Size(32, 32);
-            BtnMinimizaCAD.TabIndex = 15;
-            BtnMinimizaCAD.UseVisualStyleBackColor = true;
-            BtnMinimizaCAD.Click += BtnMinimizaCAD_Click;
-            // 
-            // BtnSair2
-            // 
-            BtnSair2.Location = new Point(406, 12);
-            BtnSair2.Name = "BtnSair2";
-            BtnSair2.Size = new Size(32, 32);
-            BtnSair2.TabIndex = 14;
-            BtnSair2.UseVisualStyleBackColor = true;
-            BtnSair2.Click += button2_Click;
-            // 
             // BtnCriarConta
             // 
             BtnCriarConta.Location = new Point(175, 430);
@@ -168,8 +148,6 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(450, 500);
             Controls.Add(BtnCriarConta);
-            Controls.Add(BtnMinimizaCAD);
-            Controls.Add(BtnSair2);
             Controls.Add(textBox4);
             Controls.Add(textBox3);
             Controls.Add(textBox2);
@@ -201,8 +179,6 @@
         private TextBox textBox2;
         private TextBox textBox3;
         private TextBox textBox4;
-        private Button BtnMinimizaCAD;
-        private Button BtnSair2;
         private Button BtnCriarConta;
     }
 }
