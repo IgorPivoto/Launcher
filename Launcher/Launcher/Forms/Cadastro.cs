@@ -13,7 +13,6 @@ using FireSharp.Interfaces;
 using FireSharp.Response;
 using Google.Cloud.Firestore;
 using Launcher.Classes;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
 namespace Launcher
 {
@@ -100,17 +99,7 @@ namespace Launcher
 
                 if (ChecaSeUsarioExite())
                 {
-                    LblAviso.Text = "Esse usuario já existe";
-                    return;
-                }
-                if (!ChecarSeEmailCorreto())
-                {
-                    LblAviso.Text = "Esse email esta faltando '@' ou '.COM' ";
-                    return;
-                }
-                if (!ChecaSeSenhaTemOitoCaracteres())
-                {
-                    LblAviso.Text = "A senha deve ter 8 caracteres";
+                    MessageBox.Show("Esse usuario já existe");
                     return;
                 }
 
@@ -146,6 +135,9 @@ namespace Launcher
 
         private DadosdoUsuario Pegardados()
         {
+
+
+
             string nome = Tbxnome.Text.Trim();
             string email = TbxEmail.Text.Trim();
             string senha = TbxSenha.Text;
@@ -175,43 +167,7 @@ namespace Launcher
             return false;
         }
 
-        private bool ChecarSeEmailCorreto()
-        {
-            string email = TbxEmail.Text;
-            if (!email.Contains("@"))
-            {
-                return false;
-            }
-
-            if (!email.Contains(".com"))
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-        private bool ChecaSeSenhaTemOitoCaracteres()
-        {
-            string senha = TbxSenha.Text;
-            string confirmaSenha = TbxconfirmaSenha.Text;
-            if(senha.Length < 8 && confirmaSenha.Length < 8)
-            {
-                return false;
-            }
-            else
-            {
-                return true;
-            }
-        }
-
         private void LblAviso_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Cadastro_Load(object sender, EventArgs e)
         {
 
         }

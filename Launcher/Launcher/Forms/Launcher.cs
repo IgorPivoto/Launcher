@@ -1,5 +1,4 @@
-﻿using Launcher.Forms;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,9 +12,6 @@ namespace Launcher
 {
     public partial class Launcher : Form
     {
-
-        
-
         public Launcher()
         {
             InitializeComponent();
@@ -80,9 +76,7 @@ namespace Launcher
 
         private void BtnPerfil_Click(object sender, EventArgs e)
         {
-            Perfil perfil = new Perfil();
 
-            splitContainer1.Panel2.Controls.Add(perfil);
         }
     }
 }

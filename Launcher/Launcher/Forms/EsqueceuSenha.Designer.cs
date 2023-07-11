@@ -33,23 +33,22 @@
             BtnRedefinirSenha = new Button();
             label1 = new Label();
             textBox1 = new TextBox();
-            PnlloginMexe = new Panel();
             SuspendLayout();
             // 
             // BtnMinimiza
             // 
-            BtnMinimiza.Location = new Point(520, 0);
+            BtnMinimiza.Location = new Point(518, 12);
             BtnMinimiza.Name = "BtnMinimiza";
-            BtnMinimiza.Size = new Size(40, 40);
+            BtnMinimiza.Size = new Size(32, 32);
             BtnMinimiza.TabIndex = 4;
             BtnMinimiza.UseVisualStyleBackColor = true;
             BtnMinimiza.Click += BtnMinimiza_Click;
             // 
             // BtnSair
             // 
-            BtnSair.Location = new Point(560, 0);
+            BtnSair.Location = new Point(556, 12);
             BtnSair.Name = "BtnSair";
-            BtnSair.Size = new Size(40, 40);
+            BtnSair.Size = new Size(32, 32);
             BtnSair.TabIndex = 3;
             BtnSair.UseVisualStyleBackColor = true;
             BtnSair.Click += BtnSair_Click;
@@ -62,7 +61,6 @@
             BtnRedefinirSenha.TabIndex = 5;
             BtnRedefinirSenha.Text = "Redefinir";
             BtnRedefinirSenha.UseVisualStyleBackColor = true;
-            BtnRedefinirSenha.Click += BtnRedefinirSenha_Click;
             // 
             // label1
             // 
@@ -80,20 +78,11 @@
             textBox1.Size = new Size(308, 27);
             textBox1.TabIndex = 7;
             // 
-            // PnlloginMexe
-            // 
-            PnlloginMexe.BackColor = SystemColors.ActiveBorder;
-            PnlloginMexe.Location = new Point(0, 0);
-            PnlloginMexe.Name = "PnlloginMexe";
-            PnlloginMexe.Size = new Size(520, 40);
-            PnlloginMexe.TabIndex = 18;
-            // 
             // EsqueceuSenha
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(600, 200);
-            Controls.Add(PnlloginMexe);
             Controls.Add(textBox1);
             Controls.Add(label1);
             Controls.Add(BtnRedefinirSenha);
@@ -113,6 +102,5 @@
         private Button BtnRedefinirSenha;
         private Label label1;
         private TextBox textBox1;
-        private Panel PnlloginMexe;
     }
 }

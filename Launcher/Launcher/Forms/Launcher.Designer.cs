@@ -112,7 +112,6 @@
             Controls.Add(BtnSair);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Launcher";
-            StartPosition = FormStartPosition.CenterScreen;
             Text = "Launcher";
             splitContainer1.Panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)splitContainer1).EndInit();

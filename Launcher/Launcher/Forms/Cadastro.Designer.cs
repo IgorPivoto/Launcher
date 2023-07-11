@@ -190,7 +190,7 @@
             // 
             LblAviso.AutoSize = true;
             LblAviso.ForeColor = Color.Red;
-            LblAviso.Location = new Point(117, 471);
+            LblAviso.Location = new Point(219, 471);
             LblAviso.Name = "LblAviso";
             LblAviso.Size = new Size(0, 20);
             LblAviso.TabIndex = 21;
@@ -222,7 +222,6 @@
             Name = "Cadastro";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Cadastro";
-            Load += Cadastro_Load;
             ResumeLayout(false);
             PerformLayout();
         }
