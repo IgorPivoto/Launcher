@@ -1,3 +1,5 @@
+using Launcher.Classes;
+
 namespace Launcher
 {
     internal static class Program
@@ -10,6 +12,7 @@ namespace Launcher
         {
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
+            Firestorehelper.SetEnvironmentVariable();
             ApplicationConfiguration.Initialize();
             Application.Run(new Login());
         }
